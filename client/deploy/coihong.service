@@ -1,0 +1,41 @@
+# Chạy CoiHong như một dịch vụ systemd.
+#
+# Cài:
+#   sudo cp deploy/coihong.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now coihong
+# Xem log:
+#   journalctl -u coihong -f
+
+[Unit]
+Description=CoiHong
+Documentation=https://github.com/Namtran592005/CoiHong
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=coihong
+Group=coihong
+WorkingDirectory=/opt/coihong
+
+# Biến môi trường tách riêng khỏi unit để không lộ giá trị vào `systemctl show`.
+# Sửa ở /etc/coihong.env, không sửa file unit này.
+EnvironmentFile=/etc/coihong.env
+Environment=PORT=3000
+Environment=HOSTNAME=127.0.0.1
+Environment=NODE_ENV=production
+
+ExecStart=/opt/coihong/deploy/start.sh
+Restart=always
+RestartSec=5
+
+# Chặn quyền ghi vào thư mục ứng dụng — tài nguyên tĩnh chỉ cần đọc.
+# Next ghi cache ISR vào thư mục con riêng nên vẫn hoạt động bình thường.
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=multi-user.target

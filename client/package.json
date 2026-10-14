@@ -1,0 +1,32 @@
+{
+  "name": "coihong",
+  "private": true,
+  "version": "0.2.0",
+  "license": "MIT",
+  "author": "CoiHong",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/prepare-standalone.mjs",
+    "start": "node scripts/start-standalone.mjs",
+    "start:next": "next start -p 4173",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hls.js": "^1.5.20",
+    "lucide-react": "^0.469.0",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.4",
+    "@types/react-dom": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "server-only": "^0.0.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.3"
+  }
+}

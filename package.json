@@ -1,0 +1,24 @@
+{
+  "name": "coihong-root",
+  "private": true,
+  "version": "0.2.0",
+  "license": "MIT",
+  "author": "CoiHong",
+  "description": "CoiHong - web xem phim. Chạy lệnh từ thư mục gốc, script tự chuyển vào client/.",
+  "scripts": {
+    "setup": "npm --prefix client install",
+    "dev": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix client run start",
+    "typecheck": "npm --prefix client run typecheck",
+    "logo": "node scripts/build-logo.mjs && node scripts/build-logo-sizes.mjs",
+    "pack": "node scripts/pack-deploy.mjs",
+    "check:responsive": "node scripts/check-responsive.mjs",
+    "check:cache": "node scripts/check-cache-progress.mjs",
+    "check:marquee": "node scripts/check-marquee.mjs",
+    "shot:docs": "node scripts/shot-docs.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.13.0"
+  }
+}

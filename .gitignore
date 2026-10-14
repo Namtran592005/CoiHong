@@ -1,0 +1,11 @@
+﻿node_modules
+dist
+.DS_Store
+*.local
+.env
+tsconfig.tsbuildinfo
+_dev.*
+.shots
+_p.log
+_p.err
+earth.jpg
