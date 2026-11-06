@@ -275,4 +275,4 @@ Mã nguồn dùng giấy phép [MIT](LICENSE).
 
 Giấy phép này **chỉ phủ mã nguồn của dự án**. Dữ liệu phim và URL phát đến từ máy chủ của nhà cung cấp bên thứ ba và thuộc quyền sở hữu của chủ sở hữu tác phẩm — không nằm trong phạm vi MIT. CoiHong chỉ xây dựng giao diện.
 
-Khiếu nại gỡ nội dung hoặc góp ý: Telegram [@namtran5905](https://t.me/namtran5905), hoặc xem trang `/dmca`.
+Khiếu nại gỡ nội dung hoặc góp ý: [@Namtran592005](https://github.com/Namtran592005), hoặc xem trang `/dmca`.

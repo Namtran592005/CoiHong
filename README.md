@@ -275,4 +275,4 @@ The source code is released under the [MIT License](LICENSE).
 
 This license **covers the project's source code only**. Movie data and stream URLs come from third-party providers and remain the property of their respective rights holders — they are not covered by MIT. CoiHong only builds the interface.
 
-For content takedown requests or feedback: Telegram [@namtran5905](https://t.me/namtran5905), or see the `/dmca` page.
+For content takedown requests or feedback: [@Namtran592005](https://github.com/Namtran592005), or see the `/dmca` page.
